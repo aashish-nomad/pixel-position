@@ -1,0 +1,37 @@
+# Ignore Laravel environment files
+.env
+.env.backup
+.env.local
+.env.*.backup
+
+# Ignore log files and user-generated files
+storage/*.log
+storage/logs/
+storage/framework/
+storage/debugbar/
+storage/oauth-private.key
+storage/oauth-public.key
+
+# Ignore compiled and cache files
+bootstrap/cache/
+
+# Ignore vendor and node_modules (should be installed via composer/npm)
+vendor/
+node_modules/
+
+# Ignore Vite build output
+public/build/
+public/hot
+public/storage
+public/mix-manifest.json
+public/js/*.map
+public/css/*.map
+public/*.hot-update.*
+
+# Ignore Composer dependencies
+composer.lock
+
+# Ignore npm package lock file
+package-lock.json
+yarn.lock
+pnpm-lock
