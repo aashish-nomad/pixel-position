@@ -1,9 +1,9 @@
 <x-layout>
     <section class="text-center mb-30 mt-20">
         <h1 class="font-bold text-4xl">Let's Find Your Next Job</h1>
-        <form action="" class="mt-6">
-            <input type="text" placeholder="Web Developer..." class="rounded-xl bg-white/10 border-white/20 px-5 py-4 w-full max-w-xl">
-        </form>
+        <x-forms.form action="/search" class="mt-10">
+            <x-forms.input name="q" :label="false" placeholder="Web Developer..."/>
+        </x-forms.form>
     </section>
     <section class="mb-20">
         <x-section-heading>Featured Jobs</x-section-heading>
